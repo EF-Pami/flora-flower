@@ -1,0 +1,75 @@
+
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    left: 10px;
+    width: 242px;
+    height: 58px;
+    padding-left: 0px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav {
+    display: inline-flex;
+    text-align: right;
+    list-style-type: none;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+}
+
+nav li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    list-style-type: none;
+    font-weight: bold;
+}
+nav a{
+    background-color: greenyellow;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    text-align: right;
+}
+
+
+
+/* products page styling
+---------------------------*/
+
+.flowers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.flowers-block {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.flowers img {
+    width: 150px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.flowers img:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px 4px #000;
+}
+
+.flowercontainer img {
+    width: 150px;
+    height: 300px;
+}
+.flowers-block {
+    display: grid;
+    grid-template-columns: auto auto;
+}
