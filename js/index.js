@@ -1,8 +1,9 @@
-const hmimg = document.querySelector(".featured")
+const flora = document.querySelector(".flora")
+const featured = document.querySelector(".featured")
 
-const WOO_API_KEY ='ck_6524121645e71d16b42553d87b9327fa150f0973'
-const WOO_API_SECRET ='cs_7c36ea27b9e646b8b3da5553fbc748620066273d'
-const BASE_URL = `https://localhost/flower-power/wp-json/wc/store/products?per_page=12consumer_key=${WOO_API_KEY}&consumer_secret=${WOO_API_SECRET}`
+const WOO_API_KEY ='ck_3652f8cb73dec06049c63fd04a29fbb32e837c8b'
+const WOO_API_SECRET ='cs_aaa7268a9a0546bf8bb5e89935e011ee68643b9b'
+const BASE_URL = `https://localhost/flower-power/wp-json/wc/v2/products?consumer_key=${WOO_API_KEY}&consumer_secret=${WOO_API_SECRET}`
 
 async function fetchdata() {
     try {
@@ -25,7 +26,8 @@ async function renderHTml() {
 
     for(let count = 0; count <= featured.length; count++) {
         featured.innerHTML += `
-        <img src ="${featured.image}"alt ="featured flower">
+        <p>Welcome to Flower Power your excellent flower shop where you will find all what you need for your beautiful occasions and celebrations. At flower power, we help you put a big smile on your love ones faces by providing you with the best pretty flowers needed.</p>
+        <img src ="${featured.permalink}"alt ="featured flower">
         
         `
     if (count ==0) break;    

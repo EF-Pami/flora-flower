@@ -1,8 +1,8 @@
 const flowers = document.querySelector(".flowers")
 const flowers_block = document.querySelector(".flowers-block")
-const BASE_URL = "https://localhost/flower-power/wp-json/wc/store/products"
-const WOO_API_KEY ='ck_6524121645e71d16b42553d87b9327fa150f0973'
-const WOO_API_SECRET ='cs_7c36ea27b9e646b8b3da5553fbc748620066273d'
+const WOO_API_KEY ='ck_3652f8cb73dec06049c63fd04a29fbb32e837c8b'
+const WOO_API_SECRET ='cs_aaa7268a9a0546bf8bb5e89935e011ee68643b9b'
+const BASE_URL = `https://localhost/flower-power/wp-json/wc/v2/products?consumer_key=${WOO_API_KEY}&consumer_secret=${WOO_API_SECRET}`
 
 async function fetchdata() {
     try {
@@ -23,9 +23,9 @@ async function renderHTml() {
     //console.log({products})
     //console.log({html: flowers_block.innerHTML})
     flowers_block.innerHTML = ``;
-    products.forEach(function (products, index) {
+    products.forEach(function (products) {
         flowers_block.innerHTML += `
-        <a href="productdetails.html?id=${products.id}"><img src ="${products.image[0]?.src}" alt="${products.name??'product Image'}"></a>
+        <a href="productdetails.html?id=${products.id}"><img src ="${products.permalink}" alt="${products.name}"></a>
         
         `
     })
