@@ -21,13 +21,13 @@ async function fetchdata() {
 
 
 async function renderHTml() {
-    const featured = await fetchdata();
+    const featuredproduct = await fetchdata();
     featured.innerHTML = '';
 
-    for(let count = 0; count <= featured.length; count++) {
+    for(let count = 0; count <= featuredproduct.length; count++) {
         featured.innerHTML += `
         <p>Welcome to Flower Power your excellent flower shop where you will find all what you need for your beautiful occasions and celebrations. At flower power, we help you put a big smile on your love ones faces by providing you with the best pretty flowers needed.</p>
-        <img src ="${featured.permalink}"alt ="featured flower">
+        <img src=${featuredproduct[count].images[0].src} alt=""/>
         
         `
     if (count ==0) break;    

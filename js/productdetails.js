@@ -22,7 +22,7 @@ async function renderHTml() {
     const mainElement = document.querySelector(".flowerdetails");
     mainElement.innerHTML = `
     <div class="details">    
-        <h1> ${data.name}</h1>
+        <h3> ${data.name}</h3>
         <p> ${data.description}</p>
         <p> ${data.Price}</p>
         <p> ${data.regular_price}</p>   

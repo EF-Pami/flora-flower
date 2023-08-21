@@ -23,9 +23,9 @@ async function renderHTml() {
     //console.log({products})
     //console.log({html: flowers_block.innerHTML})
     flowers_block.innerHTML = ``;
-    products.forEach(function (products) {
+    products.forEach(function (products, index) {
         flowers_block.innerHTML += `
-        <a href="productdetails.html?id=${products.id}"><img src ="${products.permalink}" alt="${products.name}"></a>
+        <a href="productdetails.html?id=${products.id}"><img src="${products.images[0].src}" alt="${products.name}"/></a>
         
         `
     })
