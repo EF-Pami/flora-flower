@@ -80,4 +80,14 @@ nav a{
         display:grid;
         grid-template-columns: auto auto auto auto;
     }
+
+    .flowers img{
+        width: 250px;
+        height: 450px;
+    }
+
+    .flowerdetails img{
+        width: 500px;
+        height: 700px;
+    }
 }

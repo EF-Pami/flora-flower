@@ -20,6 +20,7 @@ async function fetchdata() {
 
 async function renderHTml() {
     const products = await fetchdata();
+    const featuredProducts = await products.filter(products => products.featured);
     //console.log({products})
     //console.log({html: flowers_block.innerHTML})
     flowers_block.innerHTML = ``;
