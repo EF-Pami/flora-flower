@@ -81,7 +81,7 @@ nav a{
         grid-template-columns: auto auto auto auto;
     }
 
-    .flowers img{
+    .flowers img, .featured img{
         width: 250px;
         height: 450px;
     }
@@ -90,4 +90,10 @@ nav a{
         width: 500px;
         height: 700px;
     }
+    .featured{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;;
+    }
+
 }
