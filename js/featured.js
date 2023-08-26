@@ -24,7 +24,7 @@ async function renderHTml() {
     //console.log({html: flowers_block.innerHTML})
     featured.innerHTML = ``;
     products.forEach(function (products, index) {
-        featured.innerHTML += `
+        featured.innerHTML += `    
         <img src="${products.images[0].src}" alt="${products.name}"/>
         
         `

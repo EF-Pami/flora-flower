@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Home page of Flower Power">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href="CSS/styles.css" rel="stylesheet">
+    <script defer src="js/index.js"></script>
+    <title>Flora Flower: Home page</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>Flora Flower</span>
+        </div>
+        <nav id="menu">
+            <label id="hamburger-menu" for="hamburger-input">
+                <i class='fa fa-bars'></i><span class=irrelevant>not needed</span>
+            </label>
+            <input type="checkbox" id="hamburger-input" class="burger-shower"/>
+            <ul class="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="featured.html">Featured</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main class="contact-container">
+        <div class="loader"></div>
+        <div class="contact-info">
+            <h1>Contact Us</h1>
+                <h2>Chat</h2>
+                <p id="chat">Open weekdays : 09:00-18:00
+                You can chat with us through our
+                different social medier platforms
+                found at the bottom right-corner of
+                our page.</p>
+            
+                <h2>Telephone</h2>
+                <p>Open weekdays: 09:00-17:00 GMT</p>
+                <p>Phone: +47 90 87 46 89</p>
+                <h2>Email</h2>
+                <p>floraflowers@gmail.com</p>
+        </div>
+        <div class="form-container"> 
+            <form class="contact-form">
+                <div class="input">
+                    <label for="name">Name<span class=irrelevant>not needed</span></label>
+                    <input type="text" id="name" placeholder="enter your name" name="name">
+                </div>
+                <div class="input">
+                    <label for="phone">Phone<span class=irrelevant>not needed</span></label>
+                    <input type="number" id="phone"  placeholder="phone number" name="phone">
+                </div>
+                <div class="input">
+                    <label for="email">Email Address<span class=irrelevant>not needed</span></label>
+                    <input type="text" id="email" placeholder="enter your email" name="email">
+                </div>
+                <div class="input">
+                    <label for="msg">Message<span class=irrelevant>not needed</span></label>
+                    <textarea id="msg" placeholder="enter your message" name="msg"></textarea>
+                </div>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+       
+    </main>
+</body>
+</html>

@@ -1,4 +1,4 @@
-const flora = document.querySelector(".flora")
+const flora = document.querySelector(".flora-container")
 const singel = document.querySelector(".singel")
 
 //const WOO_API_KEY ='ck_3652f8cb73dec06049c63fd04a29fbb32e837c8b'
