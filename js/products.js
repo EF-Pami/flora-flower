@@ -41,14 +41,41 @@ window.onload = renderproductsThumbnails;*/
 
 async function renderHTml() {
     const products = await fetchdata();
-    const featuredProducts = products.filter(products => products.featured);
-    //console.log({products})
+    
+    console.log({products})
     //console.log({html: flowers_block.innerHTML})
     flowers_block.innerHTML = ``;
-    products.forEach(function (products, index) {
+    /*products.forEach(function (products, index) {
         flowers_block.innerHTML += `
         <a href="productdetails.html?id=${products.id}"><img src="${products.images[0].src}" alt="${products.name}"/></a>
         `
+    })*/
+    products.forEach((products) => {
+        const productDiv = document.createElement("div");
+        productDiv.className = "product";
+
+        const productsName = document.createElement("h4");
+        productsName.textContent = products.name;
+
+        const thumbnailimg = document.createElement("img");
+        thumbnailimg.src =products.images[0].src || ""; 
+        thumbnailimg.alt = products.name
+        productDiv.appendChild(thumbnailimg);
+
+        const productPrices = document.createElement("p");
+        productPrices.textContent = "prices:" + products.prices.price;
+
+        const Button = document.createElement("a");
+        Button.textContent = "View More";
+        Button.className = "cta-button";
+        Button.href = `productdetails.html?id=${products.id}`;
+        
+        
+        productDiv.appendChild(productsName);
+        productDiv.appendChild(productPrices);
+        productDiv.appendChild(Button);
+        flowers_block.appendChild(productDiv);
+
     })
 }
         
