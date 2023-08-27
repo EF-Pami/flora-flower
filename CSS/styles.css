@@ -101,17 +101,17 @@ nav a:hover {
     justify-content: space-between;
 }
 
-.flowers img, .featured img, .flora img, .flowerdetails img{
+.flowers img, .featured img, .flora-container img, .flowerdetails img{
     width: 150px;
     height: 300px;
     border-radius: 20px;
     
 }
 
-.flowers img:hover{
+/*.flowers img:hover{
     transform: scale(1.1);
     box-shadow: 2px 2px 5px 4px #000;
-}
+}*/
 
 .flowercontainer img {
     width: 150px;
@@ -133,6 +133,11 @@ nav a:hover {
     padding: 10px;
     text-decoration: none;
     margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: var(--green);
+    cursor: pointer;
 }
 
 /*Contact page
@@ -281,12 +286,16 @@ footer {
         grid-template-columns: auto auto auto auto;
     }
 
-    .flora-container{
+    .singel{
         display: grid;
         grid-template-columns: auto auto;
     }
+    .flora-container img{
+        width: 450px;
+        height: 550px;
+    }
 
-    .flowers img, .featured img, .flora-container img, .flowerdetails img{
+    .flowers img, .featured img, .flowerdetails img{
         width: 250px;
         height: 450px;
     }

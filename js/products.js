@@ -17,27 +17,7 @@ async function fetchdata() {
     
 }
 
-/*async function renderproductsThumbnails() {
-    const productcontainer = document.getElementsByClassName(flowers_block);
-    const products = await fetchdata();
-    products.forEach((product) =>{
-        const thumbnail = document.createElement("div");
-        thumbnail.classList.add("product-thumbnail");
 
-        const image = document.createElement("img");
-        image.src = product.immageUrl;
-        image.alt = product.name;
-
-        const productName = document.createElement("p");
-        productName.textContent = product.Name;
-
-        thumbnail.appendChild(image);
-        thumbnail.appendChild(productName);
-        productcontainer.appendChild(thumbnail);
-    });
-}
-
-window.onload = renderproductsThumbnails;*/
 
 async function renderHTml() {
     const products = await fetchdata();
@@ -45,11 +25,7 @@ async function renderHTml() {
     console.log({products})
     //console.log({html: flowers_block.innerHTML})
     flowers_block.innerHTML = ``;
-    /*products.forEach(function (products, index) {
-        flowers_block.innerHTML += `
-        <a href="productdetails.html?id=${products.id}"><img src="${products.images[0].src}" alt="${products.name}"/></a>
-        `
-    })*/
+    
     products.forEach((products) => {
         const productDiv = document.createElement("div");
         productDiv.className = "product";
