@@ -19,6 +19,11 @@
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    background-color: var(--aquamarine);
+}
+
 main {
     padding: 20px 10px 10px 10px;
 }
